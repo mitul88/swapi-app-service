@@ -8,6 +8,6 @@ router.route('/getSpecies/:id').get(getSpecies)
 router.route('/getHomeworld/:id').get(getHomeworld)
 router.route('/getFilmNames/:id').get(getFilmNames)
 
-router.route('/').post(applicationJson, searchCharacter)
+router.route('/search').post(applicationJson, searchCharacter)
 
 module.exports = router
